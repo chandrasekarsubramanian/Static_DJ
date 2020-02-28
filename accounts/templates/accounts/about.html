@@ -1,0 +1,66 @@
+{% extends 'my_base.html' %}
+<h1>About</h1>
+
+<html>
+{% block head %}
+    <title>About</title>
+{% endblock %}
+
+{% block body %}
+    <style>
+    body {
+            {% load staticfiles %}
+            background: url("{% static 'accounts/tree1.png' %}") no-repeat right bottom;
+            background-size: 850px;
+            }
+    pre {
+        background-color: transparent;
+        border: 0;
+        }
+    h2 {
+        color: brown;
+        }
+    </style>
+
+        <h2>About Python</h2>
+    <pre>
+        Python is one of those rare languages which can claim to be both simple and powerful.
+        You will find yourself pleasantly surprised to see how easy it is to concentrate on the solution
+        to the problem rather than the syntax and structure of the language you are programming in.
+        <h4>     The official introduction to Python is:</h4>
+        Python is an easy to learn, powerful programming language.
+        It has efficient high-level data structures and a simple and effective.
+        Python's elegant syntax and dynamic typing, together with its interpreted nature,
+        make it an ideal language for scripting and rapid application development
+        in many areas on most platforms.
+    </pre>
+
+    <h2>Story behind the name</h2>
+    <pre>
+        Guido van Rossum, the creator of the Python language, named the language after the
+        BBC show "Monty Python's Flying Circus". He doesn't particularly like snakes that
+        kill animals for food by winding their long bodies around them and crushing them.
+    </pre>
+
+    <h2>What Programmers Say</h2>
+    <pre >
+        You may find it interesting to read what great hackers like ESR have to say about Python:
+        * Eric S. Raymond is the author of "The Cathedral and the Bazaar"
+          and is also the person who coined the term Open Source.
+          He says that Python has become his favorite programming language.
+          This article was the real inspiration for my first brush with Python.
+        * Bruce Eckel is the author of the famous 'Thinking in Java'
+          and 'Thinking in C++' books. He says that no language has made him
+          more productive than Python. He says that Python is perhaps the only language
+          that focuses on making things easier for the programmer.
+          Read the complete interview for more details.
+        * Peter Norvig is a well-known Lisp author and Director of Search Quality
+          at Google (thanks to Guido van Rossum for pointing that out).
+          He says that writing Python is like writing in pseudocode.
+          He says that Python has always been an integral part of Google.
+          You can actually verify this statement by looking at the Google Jobs page
+          which lists Python knowledge as a requirement for software engineers.
+    </pre>
+
+{% endblock %}
+</html>
