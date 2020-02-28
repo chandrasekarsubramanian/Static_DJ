@@ -1,2 +1,2 @@
-# basic_django
+# Static_DJ
 Static django application
